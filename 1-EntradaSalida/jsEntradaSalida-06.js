@@ -11,8 +11,10 @@ function sumar()
 	vNum1 = document.getElementById("txtIdNumeroUno").value;
 	vNum2 = document.getElementById("txtIdNumeroDos").value;
 	
-	vRes = parseInt(vNum1)+parseInt(vNum2);
+	vNum1 = parseInt(vNum1);
+	vNum2 = parseInt(vNum2);
+	vRes = vNum1 + vNum2;
 
-	alert(vRes);
+	alert("el resultado es: "+vRes);
 }
 
