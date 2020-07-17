@@ -8,7 +8,7 @@ function mostrar()
 		alert("la persona es adolescente");
 	}if(vEdad<13){
 		alert("la persona es menor de edad");
-	}else{
+	}if(vEdad>=18){
 		alert("la persona es mayor de edad");
 }
 }//FIN DE LA FUNCIÓN
