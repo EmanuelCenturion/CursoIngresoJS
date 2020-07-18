@@ -7,8 +7,7 @@ function mostrarAumento()
 {
 	var vImporte;
 	var vDescuento;
-	vImporte = document.getElementById("txtIdImporte").value;
-	vImporte = parseInt(vImporte);
+	vImporte = parseInt(document.getElementById("txtIdImporte").value);
 	vDescuento = vImporte - (vImporte*0.25);
 	document.getElementById("txtIdResultado").value = vDescuento;
 }

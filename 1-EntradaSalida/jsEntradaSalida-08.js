@@ -9,11 +9,8 @@ function SacarResto()
 	var vNum2;
 	var vRes;
 	
-	vNum1 = document.getElementById("txtIdNumeroDividendo").value;
-	vNum2 = document.getElementById("txtIdNumeroDivisor").value;
-	
-	vNum1 = parseInt(vNum1);
-	vNum2 = parseInt(vNum2);
+	vNum1 = parseInt(document.getElementById("txtIdNumeroDividendo").value);
+	vNum2 = parseInt(document.getElementById("txtIdNumeroDivisor").value);
 	vRes = vNum1%vNum2;
 
 	alert("El resto es: "+ vRes);

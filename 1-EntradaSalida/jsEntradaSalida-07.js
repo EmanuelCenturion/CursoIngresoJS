@@ -5,15 +5,12 @@ mostrar el resulto por medio de "ALERT"
 ej.: "la Resta es 750"*/ 
 function sumar()
 {	
-	var vNum1;
-	var vNum2;
-	var vRes;
+	let vNum1;
+	let vNum2;
+	let vRes;
 
-	vNum1 = document.getElementById("txtIdNumeroUno").value;
-	vNum2 = document.getElementById("txtIdNumeroDos").value;
-	
-	vNum1 = parseInt(vNum1);
-	vNum2 = parseInt(vNum2);
+	vNum1 = parseInt(document.getElementById("txtIdNumeroUno").value);
+	vNum2 = parseInt(document.getElementById("txtIdNumeroDos").value);
 	vRes = vNum1 + vNum2;
 	
 	alert("la suma es: "+vRes);
@@ -21,15 +18,12 @@ function sumar()
 
 function restar()
 {
-	var vNum1;
-	var vNum2;
-	var vRes;
+	let vNum1;
+	let vNum2;
+	let vRes;
 
-	vNum1 = document.getElementById("txtIdNumeroUno").value;
-	vNum2 = document.getElementById("txtIdNumeroDos").value;
-	
-	vNum1 = parseInt(vNum1);
-	vNum2 = parseInt(vNum2);
+	vNum1 = parseInt(document.getElementById("txtIdNumeroUno").value);
+	vNum2 = parseInt(document.getElementById("txtIdNumeroDos").value);
 	vRes = vNum1 - vNum2;	
 
 	alert("la resta es: "+vRes);
@@ -37,15 +31,12 @@ function restar()
 
 function multiplicar()
 { 
-	var vNum1;
-	var vNum2;
-	var vRes;
+	let vNum1;
+	let vNum2;
+	let vRes;
 
-	vNum1 = document.getElementById("txtIdNumeroUno").value;
-	vNum2 = document.getElementById("txtIdNumeroDos").value;
-	
-	vNum1 = parseInt(vNum1);
-	vNum2 = parseInt(vNum2);
+	vNum1 = parseInt(document.getElementById("txtIdNumeroUno").value);
+	vNum2 = parseInt(document.getElementById("txtIdNumeroDos").value);
 	vRes = vNum1 * vNum2;	
 
 	alert("la multiplicaión es: "+vRes);
@@ -53,17 +44,14 @@ function multiplicar()
 
 function dividir()
 {
-	var vNum1;
-	var vNum2;
-	var vRes;
+	let vNum1;
+	let vNum2;
+	let vRes;
 
-	vNum1 = document.getElementById("txtIdNumeroUno").value;
-	vNum2 = document.getElementById("txtIdNumeroDos").value;
-	
-	vNum1 = parseInt(vNum1);
-	vNum2 = parseInt(vNum2);
+	vNum1 = parseFloat(document.getElementById("txtIdNumeroUno").value);
+	vNum2 = parseFloat(document.getElementById("txtIdNumeroDos").value);
 	vRes = vNum1 / vNum2;
 	
-	alert("la división es: "+vRes);
+	alert("la división es: "+vRes.toFixed(2));
 }
 
