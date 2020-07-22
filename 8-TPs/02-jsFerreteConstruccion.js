@@ -35,5 +35,5 @@ function Materiales ()
     ancho = parseFloat(document.getElementById("txtIdAncho").value);
     cemento = (largo * ancho)*2;
     cal = (largo * ancho)*3;
-    alert("Se necesitan: "+cemento.toFixed(0)+" bolsas de cemento y "+cal.toFixed(0)+" bolsas de cal");
+    alert("Se necesitan: "+cemento.toFixed(1)+" bolsas de cemento y "+cal.toFixed(1)+" bolsas de cal");
 }
