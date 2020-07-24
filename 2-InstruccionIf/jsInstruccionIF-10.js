@@ -7,6 +7,6 @@ function mostrar()
 	}else if(nota>=4 && nota<9){
 		alert("APROBÓ: "+nota);
 	}else{
-		alert("Vamos, la proxima se puede: "+nota);	
+		alert("Vamos, la próxima se puede: "+nota);	
 	}
 }
