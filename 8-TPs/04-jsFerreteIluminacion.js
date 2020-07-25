@@ -51,16 +51,14 @@ function CalcularPrecio() {
             document.getElementById("txtIdprecioDescuento").value = precioConDescuento;
         }
     }
+    if (cantidad == 1 || cantidad == 2) {
+        precio = precio * cantidad;
+        document.getElementById("txtIdprecioDescuento").value = precio;
+    }
     if (precioConDescuento > 120) {
         impuesto = precioConDescuento * 0.1;
         precioConDescuento = precioConDescuento + impuesto;
         document.getElementById("txtIdprecioDescuento").value = precioConDescuento;
         alert("IIBB Usted pago: " + impuesto);
     }
-    if (cantidad == 1 || cantidad == 2) {
-        precio = precio * cantidad;
-        document.getElementById("txtIdprecioDescuento").value = precio;
-    }
-
-
 }
