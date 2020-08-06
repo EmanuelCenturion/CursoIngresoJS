@@ -19,8 +19,8 @@ function mostrar()
 	let sumaPositivos=0;
 	let negativos = 0;
 	let positivos = 0;
-	let esCero;
-	let pares;
+	let esCero = 0;
+	let pares = 0;
 	let promedioPositivos;
 	let promedioNegativos;
 	let diferencia;
@@ -40,7 +40,6 @@ function mostrar()
 		if(numero%2==0){
 			pares++;
 		}
-
 		respuesta=prompt("desea continuar? s/n");
 	}
 
@@ -65,7 +64,7 @@ function mostrar()
 	document.write("4.la cantidad de positivos es :"+positivos+"<br>");
 	document.write("5.Cantidad de ceros :"+esCero+"<br>");
 	document.write("6.Cantidad de numero pares :"+pares+"<br>");
-	document.write("7.el promedio de positivos es :"+promedioNegativos+"<br>");
-	document.write("8.el promedio de negativos es :"+promedioPositivos+"<br>");
+	document.write("7.el promedio de positivos es :"+promedioNegativos.toFixed(2)+"<br>");
+	document.write("8.el promedio de negativos es :"+promedioPositivos.toFixed(2)+"<br>");
 	document.write("9.la diferencia es :"+diferencia+"<br>");
 }
