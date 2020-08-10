@@ -1,31 +1,56 @@
-var eleccionMaquina;
-var ContadorDeEmpates=0;
-var ContadorDeGanadas=0;
-var ContadorDePerdidas=0;
+let eleccionMaquina;
+let ContadorDeEmpates = 0;
+let ContadorDeGanadas = 0;
+let ContadorDePerdidas = 0;
 
-function comenzar()
-{
-	//Genero el número RANDOM entre 1 y 3
-	 	
+function comenzar() {
+	eleccionMaquina = Math.round(Math.random() * (3 - 1) + 1);
 
+	console.log(eleccionMaquina);
+}
+function piedra() {
+	if (eleccionMaquina == 1) {
+		alert("Empato");
+		ContadorDeEmpates++;
 
-
-}//FIN DE LA FUNCIÓN
-function piedra()
-{
-	
-
-}//FIN DE LA FUNCIÓN
-function papel()
-{
-
-}//FIN DE LA FUNCIÓN
-function tijera()
-{
-	
-}//FIN DE LA FUNCIÓN
-
-function mostrarResultado()
-{
-
+	} else if (eleccionMaquina == 2) {
+		alert("Usted perdió");
+		ContadorDePerdidas++;
+	} else {
+		alert("Usted ganó");
+		ContadorDeGanadas++;
+	}
+	document.getElementById("txtIdEmpatadas").value = ContadorDeEmpates;
+	document.getElementById("txtIdPerdidas").value = ContadorDePerdidas;
+	document.getElementById("txtIdGanadas").value = ContadorDeGanadas;
+}
+function papel() {
+	if (eleccionMaquina == 2) {
+		alert("Empato");
+		ContadorDeEmpates++;
+	} else if (eleccionMaquina == 3) {
+		alert("Usted perdió");
+		ContadorDePerdidas++;
+	} else {
+		alert("Usted ganó");
+		ContadorDeGanadas++;
+	}
+	document.getElementById("txtIdEmpatadas").value = ContadorDeEmpates;
+	document.getElementById("txtIdPerdidas").value = ContadorDePerdidas;
+	document.getElementById("txtIdGanadas").value = ContadorDeGanadas;
+}
+function tijera() {
+	if (eleccionMaquina == 3) {
+		alert("Empato");
+		ContadorDeEmpates++;
+	} else if (eleccionMaquina == 1) {
+		alert("Usted perdió");
+		ContadorDePerdidas++;
+	} else {
+		alert("Usted ganó");
+		ContadorDeGanadas++;
+	}
+	document.getElementById("txtIdEmpatadas").value = ContadorDeEmpates;
+	document.getElementById("txtIdPerdidas").value = ContadorDePerdidas;
+	document.getElementById("txtIdGanadas").value = ContadorDeGanadas;
 }
