@@ -25,14 +25,18 @@ function mostrar() {
 
 		do {
 			precio = parseFloat(prompt("ingrese precio de producto"));
-		} while (precio < 100 || precio > 300);
+		} while (precio < 100 || precio > 300 || isNaN(precio));
 
 		do {
 			cantidad = parseInt(prompt("ingrese cantidad de productos"));
-		} while (cantidad <= 0 || cantidad > 1000);
+		} while (cantidad <= 0 || cantidad > 1000 || isNaN(cantidad));
 
-		marca = prompt("ingrese marca de producto");
-		fabricante = prompt("ingrese fabricante de producto");
+		do {
+			marca = prompt("ingrese marca de producto");
+		} while (marca == "");
+		do {
+			fabricante = prompt("ingrese fabricante de producto");
+		} while (fabricante == "");
 
 		switch (tipo) {
 			case "alcohol":
@@ -54,7 +58,6 @@ function mostrar() {
 				contBarbijo++;
 				break;
 		}
-
 
 	}
 
